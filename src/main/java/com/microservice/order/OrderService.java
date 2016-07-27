@@ -18,7 +18,7 @@ import com.microservice.model.OrderStatus;
 		@Produces(MediaType.TEXT_XML)
 		public OrderStatus getOrderStatus(@PathParam("name")String name)
 		{
-			System.out.println("Orderd Item name is" + name);
+			System.out.println("Orderd Item name is ==>" + name);
 			OrderStatus status = new OrderStatus();
 			status.setOrderName(name);
 			status.setOrderCost("90");
